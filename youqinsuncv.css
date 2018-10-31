@@ -63,6 +63,12 @@ h1
   padding-left: 5px;
 }
 
+.projects{
+  border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
 .workexperience
 { border:2px solid lightgrey;
   border-radius: 5px;
