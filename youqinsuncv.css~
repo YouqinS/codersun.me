@@ -1,0 +1,142 @@
+body
+{ color: blue;
+  background-color: lightgrey;
+  margin-bottom: 100px;
+  
+  
+}
+
+
+
+
+h1
+{ text-align: center;
+}
+/*h4
+{ font-weight: normal;
+  font-size: 120%;
+}*/
+
+.cvimage
+{ height: 28%;
+  width: auto;
+  border: solid lightgrey 1px;
+  border-radius: 5px;
+  position: absolute;
+  top: 9%;
+  right: 10%;
+}
+
+.personalinfo
+{ border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  position: absolute;
+  right: 21%;
+  top: 18%;
+  padding-right: 10px;
+  padding-left: 5px;
+  
+}
+
+
+
+.contactinfo
+{border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  position: absolute;
+  right: 13%;
+  top: 37%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.itskills
+{ border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  position: absolute;
+  right: 4%;
+  top: 60%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.workexperience
+{ border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  position: absolute;
+  left: 4%;
+  top: 95%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+
+.education
+{ border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding-right: 10px;
+  padding-left: 5px;
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.education li
+{ list-style-type: none;
+}
+
+.language
+{ border:2px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding-right: 10px;
+  padding-left: 5px;
+  position: absolute;
+  right: 20%;
+  top: 95%;
+}
+
+
+.socialmedia
+{ 
+  
+  padding-right: 40px;
+  padding-left: 5px;
+  position: absolute;
+  right: 20%;
+  top: 125%;
+  font-size: large;
+  
+}
+.socialmedia li
+{ list-style-type: none;
+  display: inline;
+  
+}
+
+.socialmedia a
+{ 
+  background-color: lightpink;
+  font-size: 1.2em;
+  white-space: pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

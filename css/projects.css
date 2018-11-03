@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{ font-family: sans-serif;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(/images/4.jpg);
+}
+
+
+/*.container
+{ display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
+
+.header{
+    width: 100%;
+    position: fixed;
+}
+
+
+.headerbar{
+    height: 10%;
+    background-color:rgba(16, 2, 63, 0.2);
+    color: rgba(255, 204, 0,0.5);
+    padding-top: 1%;
+    text-align: center;
+    font-family: courier;
+    font-size: 1.6em; 
+}
+
+.headerbar a{
+  text-decoration: none;
+    color: rgba(77, 0, 153,0.8);
+}
+
+.headerbar a:hover{
+    background-color: grey;
+    color: gold;
+}
+
+.nav
+{ width: 80%; 
+    float: left;
+}
+
+.nav ul
+{ margin-left: 0;
+  padding:3px;
+  
+  
+}
+
+.nav ul li
+{ list-style: none;
+  margin-top: 2px;
+  display: inline; 
+}
+
+   
+
+.nav ul li a
+{ display: block;
+  padding: 10px;
+  color: purple; 
+  font-family:sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color:rgba(16, 2, 63, 0.6);
+  display: inline-block; 
+  border: 1px solid rgba(16, 2, 63, 0.8);
+
+}
+
+.nav ul li a:hover
+{   background-color: dimgray;
+    color: gold;
+}
+
+
+.socialmedia{
+    width: 20%;
+    float: right;
+}
+
+.socialmedia a
+{ color: purple;
+  text-align: center;
+  display: inline-block;
+  background-color:rgba(16, 2, 63, 0.5);
+  font-size: 1.5em;
+  margin: 4px;
+  border:1px solid;
+  background-color:rgba(16, 2, 63, 0.8);
+  border-radius: 10%;
+  padding: 3px;
+  
+}
+
+.socialmedia li
+{ list-style-type: none;
+  display: inline;
+  
+}
+
+.socialmedia a:hover
+{ background-color: dimgray;
+  color: gold;
+}
+
+
+
+.projects{
+    width: 100%;
+    color: white;
+    padding-top: 10%;    
+}
+
+.projects ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects ul li{
+    padding-bottom: 4%;
+    width: 100%;
+    height: auto;
+    margin-left:30%;
+    align-items: center;
+}
+
+
+
+.projects ul li a {
+    color:antiquewhite;
+    font-style: italic;
+}
+
+.projects ul li a:hover{
+    background-color: lightgray;
+    color: red;
+}
+
+.projects ul li a:visited{
+    color: darkgray;
+}
+
+.projects ul li p{
+    padding: 5px 0 10px 0px;
+
+}
+
+
+
+
+
+
+
+

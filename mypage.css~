@@ -1,0 +1,140 @@
+body
+{ font-family: sans-serif;
+  background-color: lightblue;
+  background-image: url(bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1
+{ font-family: Arial;
+  font-size: 1.7em;
+}
+
+hr
+{ linear-gradient(white,black,white);
+}
+
+
+.container
+{ position: relative;
+  min-height: 680px;
+  width: 1170px;;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divnav
+{ width: 15%;
+  position: absolute;
+  left: 16%;
+  margin-top:10px;
+  
+  
+}
+
+.linav
+{ margin-left: 0;
+  padding:3px;
+  
+  
+}
+
+.linav li
+{ list-style: none;
+  margin-top: 2px;
+  
+}
+
+   
+
+.linav a
+{ display: block;
+  padding: 10px;
+  color: blue; 
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: lightgray;
+  
+}
+
+
+
+.linav a:hover
+{ background-color: #555;
+    color: white;
+}
+
+img
+{ width: 30%;
+  height: auto;
+  position: relative;
+  top: 10px;
+  border: solid 1px pink;
+  border-radius: 5px;
+}
+
+.content
+{ color: orange;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 35%;
+  height: 500px;
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.footer a
+{ color: purple;
+  text-align: center;
+  display: inline-block;
+  background-color: lightgrey;
+  font-size: 1.2em;
+  margin: 3px;
+  border:1px solid lightgrey;
+  
+  
+ 
+  
+  
+}
+.footer li
+{ list-style-type: none;
+  display: inline;
+  
+}
+
+.footer a:hover
+{ background-color: #555;
+    color: white;
+}
+
+#email
+{ background-color: lightgrey;
+  color: blue;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
