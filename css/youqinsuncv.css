@@ -75,7 +75,7 @@ body{
 
 .nav ul li a:hover
 {   background-color: dimgray;
-    color: gold;
+    color: white;
 }
 
 
@@ -170,7 +170,7 @@ h1{ text-align: center;
 
 .socialmedia a:hover
 { background-color: dimgray;
-  color: gold;
+  color: white;
 }
 
 
