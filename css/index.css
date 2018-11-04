@@ -130,7 +130,7 @@ img
   color: red;
 }
 
-#email, #mobile { 
+#email, #mobile, #website { 
     background-color:rgba(16, 2, 63, 0.2);
   color: red;
   font-size: 1.2em;
