@@ -15,6 +15,7 @@ body
 
 
 .headerbar{
+    width: 100%;
     background-color:rgba(16, 2, 63, 0.2);
     color: rgba(255, 204, 0,0.5);
     text-align: center;
@@ -39,19 +40,19 @@ body
   margin-right: auto;*/
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .divnav
 { /*width: 10%;
   position: absolute;
   left: 15%;*/
-  flex: 20%;
-  margin:3% 0 0 5%;
+  flex: 10%;
+/*  margin:3% 0 0 5%;*/
 }
 
-.linav
-{ margin-left: 0;
-  width: 80%;
+.linav{ 
+  width: 50%;
 }
 
 .linav li
@@ -70,23 +71,18 @@ body
   text-decoration: none;
   background-color:rgba(16, 2, 63, 0.4);
   text-align: center;
+  transition: width 1s, height 1s, transform 2s;
   
 }
 
 
 
 .linav a:hover
-{ background-color: #555;
+{ background-color: beige;
     color: red;
+        transform: translate(30px, 1px);
 }
 
-img
-{ width: 25%;
-  height: auto;
-  border: solid 1px darkblue;
-  border-radius: 20%;
-    margin-bottom: 2%;
-}
 
 .content
 { color: red;
@@ -95,11 +91,20 @@ img
   /*position: absolute;
     width: 30%;
     margin-left: 32%;*/
-    flex: 35%;
+    flex: 60%;
     height: 80%;
     padding: 1% 0 1% 0;
-    margin: 3% 5% 2% 0;
+    margin: 3% 5% 2% 1%;
   
+}
+
+
+img
+{ width: 25%;
+  height: auto;
+  border: solid 1px darkblue;
+  border-radius: 20%;
+    margin-bottom: 2%;
 }
 
 
@@ -112,7 +117,11 @@ img
   margin-bottom: 2%;
 }
 
-
+#website a:hover { 
+    background-color: beige;
+    color: red;
+    padding: 2px;
+}
 
 
 .footer a
@@ -120,13 +129,14 @@ img
   text-align: center;
   display: inline-block;
   background-color:rgba(16, 2, 63, 0.4);
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin: 3px;
   border:1px solid rgba(16, 2, 63, 0.5);
   border-radius: 5px;
-  height: 20px;
-  width: auto;
-  padding: 7px;
+  height: 30px;
+  width: 35px;
+    transition: width 1s, height 1s, transform 1s;
+
 }
 
 .footer li
@@ -136,8 +146,10 @@ img
 }
 
 .footer a:hover
-{ background-color: #555;
+{ background-color: beige;
     color: red;
+    transform: rotate(360deg);
+
 }
 
 
@@ -146,18 +158,22 @@ img
 .msgform {
     /*width: 25%;
     float: right;*/
-    margin: 2% 3% 0 0;
-    flex: 45%;
+    margin: 2% 3% 3% 0;
+    flex: 85%;
 }
+
 .msgform h3{
     color: blue;
     text-align: center;
 }
+
 label {
-    padding: 12px 12px 12px 0;
+/*    padding: 12px 6px 12px 0;*/
     display: inline-block;
     color: blue;
     font-weight: bold;
+    font-size: 1.2em;
+   
 }
 
 .row:after {
@@ -168,15 +184,13 @@ label {
 
 .col-25 {
     float: left;
-    width: 12%;
+    width: 15%;
     margin-top: 10px;
-    
-
 }
 
 .col-75 {
     float: right;
-    width: 88%;
+    width: 85%;
     margin-top: 6px;
 }
 
@@ -214,7 +228,54 @@ form input[type=submit]:hover {
 }
 
 
+/******************************************************************/
+@media only screen and (max-width: 600px){
+    
+.divnav{ 
+  flex: 100%;
+}
 
+.linav{ 
+margin-left: 0;
+  width: 100%;
+}
+
+.linav li{
+    list-style: none;
+    display: inline-block;
+  border: 1px solid rgba(16, 2, 63, 0.8);
+
+}
+    
+    .linav a{
+        padding: 5px;
+    }
+    
+    .linav a:hover{
+    transform: none;
+
+    }
+    
+    .msgform {
+    margin: 2% 3% 3% 3%;
+    flex: 100%;
+}
+    
+    .col-25 {
+    float: left;
+    width: 18%;
+        padding-top: 5px;
+}
+    
+    .col-75 {
+    float: right;
+    width: 82%;
+    margin-top: 6px;
+}
+
+
+    
+}
 
 
 

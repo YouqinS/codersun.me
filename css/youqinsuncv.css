@@ -40,7 +40,7 @@ body{
 
 
 .nav
-{ width: 80%; 
+{ width: 100%; 
     float: left;
 }
 
@@ -105,7 +105,7 @@ body{
     flex-direction: row-reverse;
     margin: auto;
     left: 12%;
-    padding-top: 10%;
+    padding-top: 140px;
 }
 
 .rightsidebar{
@@ -139,6 +139,12 @@ h1{ text-align: center;
   text-align: center;
   color:beige;
   margin: 1% 0 3% 0;
+}
+
+#website a:hover { 
+    background-color: beige;
+    color: red;
+    padding: 2px;
 }
 
 .socialmedia{
@@ -234,8 +240,50 @@ h1{ text-align: center;
 
 
 
+/******************************************************************/
+@media only screen and (max-width: 600px){
+    
+    .nav ul li a{ 
+        padding: 5px;
+    }
+    
+    .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 155px;
+}
 
 
+
+.rightsidebar{
+    color: beige;
+    flex: 100%;
+    border: solid 1px gray;
+}
+
+.maincontent{
+    flex: 100%;
+    padding-left: 2%;
+    border: solid 1px gray;
+
+}
+
+
+
+.btn {
+  background-color: rgba(16, 2, 63, 1);
+
+    position: fixed;
+    right: 60%;
+    bottom: 77%;
+    width: 80px;
+    height: 30px;}
+
+
+
+
+}
 
 
 

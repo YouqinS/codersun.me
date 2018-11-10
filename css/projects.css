@@ -14,19 +14,17 @@ body
 }
 
 
-/*.container
-{ display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}*/
-
 .header{
     width: 100%;
-    position: fixed;
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 .headerbar{
+    flex: 100%;
     height: 10%;
     background-color:rgba(16, 2, 63, 0.2);
     color: rgba(255, 204, 0,0.5);
@@ -46,37 +44,37 @@ body
     color: gold;
 }
 
-.nav
-{ width: 80%; 
+.nav{ 
+    margin-top: 10px;
+    flex: 80%;
+/*
+    width: 80%; 
     float: left;
+*/
 }
 
-.nav ul
-{ margin-left: 0;
+.nav ul{ 
+    margin-left: 0;
   padding:3px;
-  
-  
 }
 
-.nav ul li
-{ list-style: none;
+.nav ul li{
+    list-style: none;
   margin-top: 2px;
-  display: inline; 
+  display: inline-block; 
 }
 
    
 
-.nav ul li a
-{ display: block;
+.nav ul li a{ 
   padding: 10px;
   color: purple; 
   font-family:sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  background-color:rgba(16, 2, 63, 0.6);
-  display: inline-block; 
-  border: 1px solid rgba(16, 2, 63, 0.8);
+  background-color:rgba(16, 2, 63, 0.8);
+  border: 1px solid rgba(16, 2, 63, 0.5);
 
 }
 
@@ -87,8 +85,11 @@ body
 
 
 .socialmedia{
+    flex: 20%;
+/*
     width: 20%;
     float: right;
+*/
 }
 
 .socialmedia a
@@ -107,7 +108,7 @@ body
 
 .socialmedia li
 { list-style-type: none;
-  display: inline;
+  display: inline-block;
   
 }
 
@@ -116,29 +117,33 @@ body
   color: gold;
 }
 
-
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .projects{
-    width: 100%;
+    flex: 80%;
+    margin: auto;
     color: white;
-    padding-top: 10%;    
+    margin-top: 120px;
 }
 
 .projects ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+    
 }
 
 .projects ul li{
     padding-bottom: 4%;
-    width: 100%;
     height: auto;
-    margin-left:30%;
-    align-items: center;
 }
+
 
 
 
@@ -163,6 +168,36 @@ body
 
 
 
+
+@media only screen and (max-width: 600px){
+    
+.nav, .socialmedia{ 
+    margin-top: 2px;
+    flex: 100%;
+}
+    
+
+    
+    .nav ul li a{ 
+    display: inline-block;
+        padding: 5px;
+
+}
+
+     .projects ul li h3 {
+        margin:10px;
+        font-size: 1.1em;
+         color: crimson;
+         font-weight: bold;
+    }
+    
+    .projects{
+        margin-top: 200px;
+    }
+
+
+
+}
 
 
 
