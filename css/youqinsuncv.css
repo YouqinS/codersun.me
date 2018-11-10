@@ -210,7 +210,14 @@ h1{ text-align: center;
   color: beige;
     font-size: 1.2em;
     padding-left: 2%;
+    flex-wrap: wrap;
 }
+
+.projects ul li{
+/*    list-style-type: square;*/
+    padding: 3px;
+}
+
 
 .projects ul li a{
     font-style: italic;
@@ -223,12 +230,6 @@ h1{ text-align: center;
 
 .projects ul li a:visited{
     color: grey;
-}
-
-
-.projects ul li{
-    list-style-type: square;
-    padding: 3px;
 }
 
 
@@ -267,23 +268,24 @@ h1{ text-align: center;
     color: beige;
     flex: 100%;
     border: solid 1px gray;
+     flex-wrap: wrap;
 }
 
 .maincontent{
     flex: 100%;
     padding-left: 2%;
     border: solid 1px gray;
+     flex-wrap: wrap;
 
 }
-
 
 
 .btn {
   background-color: rgba(16, 2, 63, 1);
 
     position: fixed;
-    right: 60%;
-    bottom: 77%;
+    right: 330px;
+    bottom: 30px;
     width: 80px;
     height: 30px;}
 

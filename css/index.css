@@ -168,9 +168,11 @@ transform: translate(-5px, -1px);
   float: left;
 }
 
+/*
 .linav{ 
 
 }
+*/
 
 .linav li
 { list-style: none;
@@ -202,14 +204,15 @@ transform: translate(-5px, -1px);
 
    /* transform: rotate(360deg);*/
 }
-    .content
-{ color: white;
+    
+.content{
+  color: white;
   text-align: center;
-  position: absolute;
-  margin-left: 3%;
-  width: 80%;
+  width: 100%;
+    margin: auto;
   padding: 10px;
 }
+
 
 }
 
