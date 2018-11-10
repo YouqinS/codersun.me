@@ -32,11 +32,21 @@ body{
     font-size: 1.6em; 
 }
 
+
+
+/*
 .headerbar a{
   text-decoration: none;
     color: purple;
     font-weight: bold;
 }
+*/
+
+.headerbar a{
+  text-decoration: none;
+    color: rgba(77, 0, 153,0.8);
+}
+
 
 .headerbar a:hover{
     background-color: grey;
@@ -162,7 +172,6 @@ body{
 }
     
 .projects{
-    padding-top: 25px;
     flex: 100%;
     color: beige;
     font-size: 1.2em;

@@ -13,9 +13,14 @@ body
 }
 
 
+.header{
+ position: fixed;
+ width: 100%;
+
+}
+
 
 .headerbar{
-    width: 100%;
     background-color:rgba(16, 2, 63, 0.2);
     color: rgba(255, 204, 0,0.5);
     text-align: center;
@@ -34,25 +39,17 @@ body
     color: gold;
 }
 
-.container
-{ /*position: relative;
-  margin-left: auto;
-  margin-right: auto;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .divnav
 { /*width: 10%;
   position: absolute;
   left: 15%;*/
-  flex: 10%;
+  flex: 100%;
 /*  margin:3% 0 0 5%;*/
 }
 
 .linav{ 
-  width: 50%;
+  width: 10%;
+    margin-left: 2%;
 }
 
 .linav li
@@ -84,8 +81,21 @@ body
 }
 
 
-.content
-{ color: red;
+
+.container{
+    /*position: relative;
+  margin-left: auto;
+  margin-right: auto;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 5%;
+}
+
+
+
+.content{
+color: red;
   text-align: center;
   background-color:rgba(16, 2, 63, 0.2);
   /*position: absolute;
@@ -230,6 +240,10 @@ form input[type=submit]:hover {
 
 /******************************************************************/
 @media only screen and (max-width: 600px){
+    
+    .container{
+        padding-top: 100px;
+    }
     
 .divnav{ 
   flex: 100%;

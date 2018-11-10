@@ -20,6 +20,9 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
+    top: 0;
+    
 }
 
 
@@ -32,6 +35,8 @@ body
     text-align: center;
     font-family: courier;
     font-size: 1.6em; 
+      
+
 }
 
 .headerbar a{
@@ -121,6 +126,7 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .projects{
