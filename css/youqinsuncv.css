@@ -121,12 +121,6 @@ body{
     border: solid 1px gray;
 }
 
-.maincontent{
-    flex: 65%;
-    padding-left: 2%;
-    border: solid 1px gray;
-
-}
 
 
 h1{ text-align: center;
@@ -138,8 +132,7 @@ h1{ text-align: center;
   width: 30%;
   border: solid lightgrey 1px;
   border-radius: 25px;
-    position: relative;
-    left: 35%;
+    margin-left: 33%;
 }
 
 .contactinfo{  
@@ -203,6 +196,14 @@ h1{ text-align: center;
 
 .lang{
     font-weight: bold;
+}
+
+
+.maincontent{
+    flex: 65%;
+    padding-left: 2%;
+    border: solid 1px gray;
+
 }
 
 
@@ -282,14 +283,12 @@ h1{ text-align: center;
 
 .btn {
   background-color: rgba(16, 2, 63, 1);
-
     position: fixed;
     right: 330px;
     bottom: 30px;
     width: 80px;
-    height: 30px;}
-
-
+    height: 30px;
+    }
 
 
 }

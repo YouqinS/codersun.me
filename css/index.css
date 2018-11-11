@@ -14,17 +14,16 @@ body
   background-image: url(/images/stars.gif);
 }
 
-
-
-h1
-{ font-family: Arial;
-  font-size: 1.7em;
+.header{
+    position: fixed;
+    width: 100%;
 }
 
-
 .headerbar{
+/*
     width: 100%;
     position:fixed;
+*/
     background-color:rgba(16, 2, 63, 0.2);
     color: rgba(255, 204, 0,0.5);
     text-align: center;
@@ -44,20 +43,23 @@ h1
     color: gold;
 }
 
-.main{
-    padding-top: 100px;
-}
 
 
 .divnav{
-  position: absolute;
-  left: 20%;    
+    flex: 100%;
+    margin-left: 10%;
+
+/*
+  position: fixed;
+  left: 20%;
+  top: 15%;
+    width: 10%;
+*/
 }
 
 
-.linav
-{ margin-left: 0;
-  
+.linav{
+    width: 10%;  
 }
 
 .linav li
@@ -86,30 +88,40 @@ h1
 .linav a:hover
 { background-color:aliceblue;
     color: red;
-    width: 120%;
-    height: 120%;
+/*
+    width: 110%;
+    height: 110%;
+*/
     transform: translate(30px, 10px);
 
    /* transform: rotate(360deg);*/
 }
 
-img
-{ width: 40%;
+
+
+
+.container{
+    display: flex;
+  flex-direction: column;
+  padding-top: 7%;
+  color: white;
+  text-align: center;
+}
+
+
+img{
+ width: 20%;
   height: auto;
-  position: relative;
-  top: 15%;
+  top: 65%;
   margin: auto;
   border: solid 1px darkblue;
  }
 
-.content
-{ color: white;
-  text-align: center;
-  position: absolute;
-  margin-left: 35%;
-  width: 30%;
-  padding: 10px;
+h1
+{ font-family: Arial;
+  font-size: 1.7em;
 }
+
 
 
 .footer a{
@@ -159,23 +171,22 @@ transform: translate(-5px, -1px);
         font-size: 1.2em;
        padding: 0;
     }
+/*
     
  .divnav{ 
   width: 100%;
-  position:fixed;
   top: 10%;
   left: 0;
   float: left;
 }
-
-/*
-.linav{ 
-
-}
 */
 
-.linav li
-{ list-style: none;
+.linav{
+    width: 100%;  
+}
+
+.linav li{
+    list-style: none;
   display: inline-block;
 }
 
@@ -187,7 +198,6 @@ transform: translate(-5px, -1px);
   text-transform: uppercase;
   text-decoration: none;
   background-color:rgba(16, 2, 63, 0.4);
-  border: 1px solid purple;
   border-radius: 5%;
   text-align: center;
   font-family:sans-serif;
@@ -205,12 +215,8 @@ transform: translate(-5px, -1px);
    /* transform: rotate(360deg);*/
 }
     
-.content{
-  color: white;
-  text-align: center;
-  width: 100%;
-    margin: auto;
-  padding: 10px;
+.container{
+  padding-top: 25%;
 }
 
 
