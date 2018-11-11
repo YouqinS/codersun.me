@@ -177,6 +177,7 @@ transform: translate(-5px, -1px);
 .footer{
     width: 50px;
     height: 50px;
+    padding-bottom: 2%;
     border: 1px solid rgba(16, 2, 63, 0.2);
     border-radius: 50%;
     background-color: red;
@@ -186,9 +187,9 @@ transform: translate(-5px, -1px);
 
 @keyframes myfirst {
     0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:50%; top:0px;}
-    50%  {background-color:blue; left:100%; top:0px;}
-    75%  {background-color:green; left:50%; top:00px;}
+    25%  {background-color:yellow; left:50%; top:25px;}
+    50%  {background-color:blue; left:90%; top:-10px;}
+    75%  {background-color:green; left:50%; top:25px;}
     100% {background-color:red; left:0px; top:0px;}
     }
 
@@ -243,14 +244,21 @@ transform: translate(-5px, -1px);
 }
     
 .container{
-  padding-top: 25%;
+  padding-top: 100px;
 }
     
+/*
     -webkit-animation: none !important;
 		-moz-animation: none !important;
 		-o-animation: none !important;
 		-ms-animation: none !important;
-		animation: none !important;
+*/
+    .footer{
+        width: 0;
+        height: 0;
+        background-color:rgba(16, 2, 63, 0);
+        animation: none !important;
+    }	
 
 
 }
