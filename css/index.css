@@ -166,7 +166,7 @@ h2{
 
 
 .contact{
-    width: 200px;
+    /*width: 200px;*/
     min-width: fit-content;
     margin: auto;
     /*background-color: rgb(43, 43, 43);*/
