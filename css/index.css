@@ -152,13 +152,13 @@ img{
 h1{
     font-family: Arial, serif;
     font-size: 4em;
-    color: #dd1d74;
+    color: #e1e1e1;
 }
 
 h2{
     /*font-size: 3vw;*/
     font-size: 3em;
-    color: snow;
+    color: #d50869;
 }
 
 
@@ -177,8 +177,8 @@ h2{
 }
 
 .contact ul li h4{
-    color: #f4ece2;
-    font-size: 1.8em;
+    color: #d2d2d2;
+    font-size: 1.5em;
 }
 
 .contact a{
@@ -189,7 +189,8 @@ h2{
 #website a:hover {
     background-color: #f4ece2;
     color: #010101;
-    padding: 5px;
+    padding: 3px 5px;
+    text-decoration: none;
 }
 
 
@@ -216,8 +217,8 @@ h2{
   border:1px solid rgb(25, 25, 25);
   padding: 2px;
   transition: width 0.5s, height 0.5s, transform 0.1s;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
 }
 
