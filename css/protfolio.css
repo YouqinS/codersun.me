@@ -77,8 +77,8 @@ body
 
 /*noinspection ALL*/
 .gallery{
-    /*padding-top: 60px;*/
-    margin: 60px auto;
+    padding-top: 60px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     /*width: -webkit-fill-available;*/
@@ -199,7 +199,7 @@ body
 }
 
 .video{
-    top: 10%;
+    top: 15%;
     right: 10%;
     background-color: whitesmoke;
     display: none;
