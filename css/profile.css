@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background-image: linear-gradient(to right, black, black,black);*/
+    background-color: #575757;
+   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.divnav{
+    background-color: #575757;
+    width: 100%;
+    position:fixed;
+    float: left;
+    min-width: fit-content;
+    z-index: 99;
+}
+
+
+.linav li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+.linav a{
+    padding: 5px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5%;
+    text-align: center;
+    font-family:sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+
+.linav a:hover{
+    background-color: #dad9d8;
+    color: #070707;
+    text-decoration: none;
+    border: none;
+}
+
+
+.btn {
+  background-color: #3a3a3a;
+    background-image: linear-gradient(45deg, yellow, #e60000, #800080, blue);
+    color: whitesmoke;
+  border: 1px solid #c2c200;
+    border-radius: 5px;
+    width: 100px;
+  /*color: #080808;*/
+  cursor: pointer;
+  font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.btn:hover {
+    /*background-image: linear-gradient(#dd58c1,#a71761, #dd58c1);*/
+    background-image: radial-gradient(circle, #0000b0, purple,red, yellow);
+    color: #f1f1f1;
+}
+
+.container{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-direction: row-reverse;*/
+    margin: auto;
+    padding: 60px 10px;
+}
+
+.heading{
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #535353;
+    padding-top: 5px;
+    height: max-content;
+}
+.cvimage{
+    height: 120px;
+    width: auto;
+    border-radius: 50%;
+    margin: 10px 0 10px 12%;
+    display: block;
+}
+.heading ul{
+    list-style: none;
+    margin: auto;
+}
+
+.heading h1{
+    color: #f4ece2;
+    text-align: center;
+}
+
+.heading h3{
+    color: #d8749d;
+    text-align: center;
+}
+
+
+
+.leftsidebar{
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /*border: solid 1px #d3d3d3;*/
+    background-color: #f4ece2;
+}
+
+
+.leftsidebar h3{
+    text-align: center;
+    padding: 3px;
+    background-color: #5b5b5b;
+    color: #f1e5dd;
+    margin: 15px auto;
+    font-size: 1.3em;
+    width: 180px;
+}
+
+.contactinfo{
+    display: block;
+    color: #404040;
+    margin: 0 auto;
+}
+
+.contactinfo ul{
+    margin: auto;
+}
+
+.contactinfo ul li{
+    list-style: none;
+}
+
+#website a:hover { 
+    background-color: #bebebe;
+    color: #5b5ed2;
+    padding: 4px;
+}
+
+.socialmedia{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socialmedia a{
+    color: #ded3cc;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(83, 83, 83, 0.98);
+  font-size: 1.3em;
+    width: 28px;
+    height: 28px;
+  margin: 4px;
+  border:1px solid;
+  border-radius: 5px;
+  padding: 2px;
+  
+}
+
+.socialmedia li { 
+    list-style-type: none;
+  display: inline;
+  
+}
+
+.socialmedia a:hover{
+    background-color: #e2e2e2;
+  color: #535353;
+}
+
+.itskills{
+  display: block;
+  color: #404040;
+    min-width: fit-content;
+  margin: 0 auto;
+  }
+
+.itskills ul li{
+    list-style-type:none;
+    padding: 2px;
+    margin: auto;
+    font-weight: bold;
+}
+
+.fa-star{
+    color: #d8056a;
+}
+
+.education{
+    text-align: center;
+}
+
+ .education, .language{
+    color: #404040;
+    margin: 0 auto;
+
+}
+
+
+.language ul li{
+    list-style-type: none;
+    padding: 1px;
+}
+
+.lang{
+    font-weight: bold;
+}
+
+.maincontent{
+    flex: 65%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.maincontent h2{
+    text-align: center;
+    padding: 2px;
+    /*text-transform: uppercase;*/
+    /*text-decoration-line: underline;*/
+    /*text-decoration-style: double;*/
+    background-color: #5b5b5b;
+    color: #f1e5dd;
+    min-width: fit-content;
+    margin: 5px auto;
+    font-size: 1.5em;
+}
+
+
+.projects{
+    color: #5a5a5a;
+    font-size: 1.2em;
+    flex-wrap: wrap;
+}
+
+.projects ul li{
+    list-style: none;
+    padding: 3px;
+    overflow: revert;
+    overflow-wrap: break-word;
+}
+
+.projects ul li h4{
+    font-weight: bold;
+    color: #555555;
+}
+
+.projects ul li p{
+    font-size: large;
+    font-weight: normal;
+    color: #555555;
+    overflow: revert;
+    overflow-wrap: break-word;
+}
+
+.projects ul li a{
+    font-style: italic;
+    color: #5b5ed2;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.projects ul li a:hover{
+    background-color:lightgray;
+    padding: 5px;
+}
+
+.projects ul li a:visited{
+    /*color: grey;*/
+}
+
+
+ .workexperience{
+
+}
+
+.workexperience ul li{
+    color: #404040;
+    list-style: none;
+}
+
+
+
+
+
+
+/******************************************************************/
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 55px;
+    }
+
+    .heading{
+        flex-direction: column;
+    }
+
+    .cvimage{
+        margin: 2px auto;
+    }
+
+
+    .heading h1{
+        font-size: 1.8em;
+    }
+
+    .heading h3{
+        font-size: 1.4em;
+    }
+
+    .leftsidebar{
+        /*flex: 100%;*/
+        width: 100%;
+    }
+
+
+    .itskills{
+        /*min-width: fit-info-content;*/
+    }
+
+    .maincontent{
+        margin: 1px auto;
+        padding-left: 0;
+        width: 100%;
+        overflow: auto;
+        /*flex: 100%;*/
+    }
+
+    .maincontent h2{
+    }
+
+
+    .projects{
+        color: #5a5a5a;
+        width: 100%;
+    }
+
+    .projects ul li{
+        padding: 3px;
+        width: 100%;
+    }
+
+    .projects ul li h4{
+        font-weight: normal;
+    }
+
+    .projects ul li p{
+        font-weight: normal;
+    }
+
+    .btn {
+        visibility: hidden;
+    }
+
+
+
+
+}
+
+
+
+
+
+

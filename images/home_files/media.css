@@ -1,0 +1,132 @@
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    background-color: rgba(93, 93, 93, 0.32);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.desc .description{
+    display: flex;
+    flex: 100%;
+    text-align: left;
+}
+
+.desc .likes, .comments{
+    color: #f0f8ff;
+}
+
+
+
+
+/**********************************************************************************************************************/
+@media only screen and (max-width: 700px) {
+
+    .mediacontent{
+        padding-top: 150px;
+    }
+
+
+    .responsive {
+        width: 49%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mediacontent{
+    }
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+
+}
+
+
+/*.mediacontent ul{*/
+    /*list-style: none;*/
+    /*display: flex;*/
+    /*flex: 100%;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-evenly;*/
+/*}*/
+
+/*.mediacontent ul li{*/
+    /*display: inline;*/
+    /*max-width: 16%;*/
+    /*max-height: 16%;*/
+    /*margin: 2%;*/
+/*}*/
+
+/*.mediacontent ul li figure{*/
+    /*display: inline;*/
+    /*max-width: 16%;*/
+    /*max-height: 16%;*/
+    /*margin: 2%;*/
+/*}*/
+
+/*.mediacontent ul li figure a img{*/
+
+/*}*/
+
+/*.mediacontent .feedback{*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*font-size: large;*/
+    /*font-weight: bold;*/
+    /*color: white;*/
+/*}*/
+
+/*.mediacontent .feedback .description{*/
+    /*display: flex;*/
+    /*flex: 100%;*/
+/*}*/
+
+/*.mediacontent .feedback p{*/
+    /*padding: 5px;*/
+/*}*/
+
+/*.mediacontent .feedback:hover{*/
+    /*background-color: red;*/
+
+
+/*}*/
+

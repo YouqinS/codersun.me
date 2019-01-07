@@ -25,73 +25,42 @@ function validateForm() {
   }
 }
 
-
-
-
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
+//toggle menu
+const showMenu = () =>{
+  const menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
   } else {
-    document.getElementById("header").style.top = "-200px";
+    menu.style.display = "block";
   }
-  prevScrollpos = currentScrollPos;
-}
+};
+
+//hide menu
+const hideMenu = () =>{
+  const menu = document.getElementById("menu");
+    menu.style.display = "none";
+    alert("hihe");
+};
+
+//show it-content on homepage
+const showSkillsProjects = () =>{
+  const itContent = document.getElementById("it-content");
+  // const menuSkill = document.getElementById("menuSkills");
+  if(itContent.style.display === "none"){
+    itContent.style.display = "block";
+  }else {
+    itContent.style.display = "none";
+  }
+};
 
 
-
-
-
-
-//var lastKnownScrollY = 0;
-//var currentScrollY = 0;
-//var ticking = false;
-//var idOfHeader = 'header';
-//var eleHeader = null;
-//const classes = {
-//  pinned: 'header-pin',
-//  unpinned: 'header-unpin',
-//};
-//function onScroll() {
-//  currentScrollY = window.pageYOffset;
-//  requestTick();
-//}
-//function requestTick() {
-//  if (!ticking) {
-//    requestAnimationFrame(update);
-//  }
-//  ticking = true;
-//}
-//function update() {
-//  if (currentScrollY < lastKnownScrollY) {
-//    pin();
-//  } else if (currentScrollY > lastKnownScrollY) {
-//    unpin();
-//  }
-//  lastKnownScrollY = currentScrollY;
-//  ticking = false;
-//}
-//function pin() {
-//    if (eleHeader == null) {
-//        console.log("eleHeader is null, cannot pin")
-//    } else if (eleHeader.classList.contains(classes.unpinned)) {
-//    eleHeader.classList.remove(classes.unpinned);
-//    eleHeader.classList.add(classes.pinned);
-//  }
-//}
-//function unpin() {
-//    if (eleHeader == null) {
-//        console.log("eleHeader is null, cannot unpin")
-//    } else if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
-//    eleHeader.classList.remove(classes.pinned);
-//    eleHeader.classList.add(classes.unpinned);
-//  }
-//}
-//window.onload = function() {
-//  eleHeader = document.getElementsByClassName("header");
-//     if (eleHeader == null) {
-//        console.log("eleHeader is null, onload() could not initialize it")
-//    }
-//  document.addEventListener('scroll', onScroll, false);
-//}
+//show download button
+$(window).scroll(function() {
+  const btn = document.getElementById("btn");
+  if($(window).scrollTop() + $(window).height() === $(document).height()) {
+    // alert("end");
+    btn.style.visibility="visible";
+  }else {
+    btn.style.visibility="hidden";
+  }
+});
