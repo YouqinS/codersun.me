@@ -264,7 +264,6 @@ h2{
 }
 
  .skills-nav a:hover .fa-arrow-down{
-
      transform: rotate(360deg);
      transition: 1s;
     /*transform: translate(-2px, -1px);*/

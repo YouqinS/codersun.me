@@ -1,4 +1,4 @@
-function validateForm() {
+const validateForm = () => {
   const requiredElements = document.querySelectorAll(".required");
   const phoneNumber = document.forms ["infoForm"]["phonenumber"].value;
   const email = document.forms["infoForm"]["email"].value;
@@ -23,7 +23,7 @@ function validateForm() {
   }else {
     return true;
   }
-}
+};
 
 //toggle menu
 const showMenu = () =>{
@@ -35,14 +35,14 @@ const showMenu = () =>{
   }
 };
 
-//hide menu
+//hide menu: not  used
 const hideMenu = () =>{
   const menu = document.getElementById("menu");
     menu.style.display = "none";
-    alert("hihe");
+    alert("hide");
 };
 
-//show it-content on homepage
+//show it-content on homepage: not used
 const showSkillsProjects = () =>{
   const itContent = document.getElementById("it-content");
   // const menuSkill = document.getElementById("menuSkills");
