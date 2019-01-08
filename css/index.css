@@ -125,7 +125,6 @@ body{
     height: 100vh;
     margin: auto;
     overflow-x: hidden;
-    flex: 100%;
 }
 
 .info-content{
@@ -143,7 +142,10 @@ body{
 
 img{
     width: 15%;
+    min-width: 80px;
+    max-width: 200px;
   height: auto;
+    min-height: auto;
   position: relative;
   margin: auto;
   border: solid 1px #555555;
@@ -204,9 +206,6 @@ h2{
 
 
 
-
-
-
 .socialmedia a{
   color: #ececec;
   text-align: center;
@@ -236,7 +235,7 @@ h2{
     /*transform: translate(-2px, -1px);*/
 }
 
-.bot-nav{
+.bot-nav, .more-down{
     display: block;
     margin: auto;
 }
@@ -248,26 +247,188 @@ h2{
     padding: 5px;
 }
 
-.bot-nav ul li a:hover, .skills-nav a:hover{
+.bot-nav ul li a:hover, .more-down a:hover{
     background-color: #e0e0e0;
     color: #3a3a3a;
 }
 
-.bot-nav ul li a, .skills-nav a{
+.bot-nav ul li a, .more-down a{
     background-color: rgba(207, 207, 207, 0.11);
     font-size: 1.3em;
     padding: 10px;
     margin: 5px 10px;
     color: gold;
     text-decoration: none;
-
 }
 
- .skills-nav a:hover .fa-arrow-down{
+ .more-down a:hover .fa-arrow-down{
      transform: rotate(360deg);
      transition: 1s;
     /*transform: translate(-2px, -1px);*/
 }
+
+
+ /*message form*/
+.msgdiv{
+    /*width: 50vw;*/
+    /*height: 50vh;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+}
+
+.send-msg{
+    text-align: center;
+    color: #d2d2d2;
+    font-size: medium;
+    font-style: italic;
+    display: flex;
+    margin: auto;
+}
+
+.send-msg button{
+    width: 60px;
+    background-color: #53b45f;
+    background-image: linear-gradient(#28e57a, #1a944e, #28e57a);
+}
+
+.send-msg button:hover{
+    background-color: #4ca456;
+    background-image: linear-gradient(#1a944e,#28e57a,#1a944e);
+
+}
+
+.msg-ask{
+
+}
+
+.write-msg-icon{
+    color: #e7dfb9;
+    display: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.send-msg:hover .write-msg-icon{
+    display: block;
+}
+
+.msg-popup{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /*left: 25%;*/
+    /*top: 18%;*/
+    padding: 50px;
+    background: #FBFBF0;
+    border: solid #000000 2px;
+    z-index: 9;
+    visibility: hidden;
+    box-shadow: 0 0 100vw 100vh rgba(0, 0, 0, 0.6);
+}
+
+
+.msg-popup label {
+    padding: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.msg-popup .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.msg-popup .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+}
+
+.msg-popup .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+
+.msg-popup form input{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: beige;
+    color: black;
+    border: 2px solid #ccc;
+    resize: vertical;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.msg-popup textarea{
+    width: -webkit-fill-available;
+    height: auto;
+    min-width: 100px;
+    min-height: 30px;
+
+}
+
+.msg-popup form input[type = submit]{
+    color: #f3eeee;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 90px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #39b760;
+    background-image: linear-gradient(#28e57a, #1a944e, #28e57a);
+    margin: 2% 40% 0 0;
+}
+
+.msg-popup form input[type=submit]:hover {
+    background-color: #49e97a;
+    background-image: linear-gradient(#1a944e,#28e57a,#1a944e);
+    color: black;
+}
+
+.msg-popup #cancelmsg{
+    background-color: #a6a0a2;
+    /*margin: 1% 5%;*/
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 25px;
+    height: 23px;
+    font-size: large;
+    text-align: center;
+
+}
+
+
+
+.msg-popup #cancelmsg:hover {
+    background-color: red;
+    border: none;
+}
+
+
 
 
 /***********************************************************************************/
@@ -372,7 +533,91 @@ h2{
 
 
 
+@media screen and (max-width: 1024px) {
 
+    .msg-popup{
+        /*left: 5%;*/
+        width: 80%;
+        height: max-content;
+        /*top: 18%;*/
+        padding: 5px;
+    }
+
+    .msg-popup .col-75 {
+        float: left;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .msg-popup form input[type = submit]{
+        width: 80px;
+        margin-top: 2%;
+        margin-right: 20%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .msg-popup{
+        /*left: 5%;*/
+        width: 90%;
+        height: max-content;
+        /*top: 100px;*/
+        /*top: 14%;*/
+        padding: 5px;
+    }
+
+
+    .msg-popup label {
+        padding: 2px;
+        margin-left: 20px;
+        display: block;
+        font-size: small;
+    }
+
+    .msg-popup .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .msg-popup .col-25 {
+        float: left;
+        width: 100%;
+    }
+
+    .msg-popup .col-75 {
+        float: left;
+        width: 90%;
+    }
+
+
+
+    .msg-popup form input{
+        width: 100%;
+        padding: 5px;
+        border: 2px solid #ccc;
+        font-size: 16px;
+        resize: vertical;
+    }
+
+    .msg-popup form input[type = submit]{
+        margin-right: 12%;
+        margin-top: 2%;
+        padding: 6px;
+        width: 80px;
+    }
+
+    /*.msg-popup a{*/
+    /*margin-top: 2%;*/
+    /*margin-left: 15%;*/
+    /*padding: 10px;*/
+    /*width: 80px;*/
+    /*}*/
+
+}
 
 
 

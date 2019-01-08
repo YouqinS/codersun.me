@@ -1,4 +1,4 @@
-const validateForm = () => {
+function validateForm() {
   const requiredElements = document.querySelectorAll(".required");
   const phoneNumber = document.forms ["infoForm"]["phonenumber"].value;
   const email = document.forms["infoForm"]["email"].value;
@@ -23,7 +23,7 @@ const validateForm = () => {
   }else {
     return true;
   }
-};
+}
 
 //toggle menu
 const showMenu = () =>{
@@ -35,14 +35,14 @@ const showMenu = () =>{
   }
 };
 
-//hide menu: not  used
+//hide menu
 const hideMenu = () =>{
   const menu = document.getElementById("menu");
     menu.style.display = "none";
-    alert("hide");
+    alert("hihe");
 };
 
-//show it-content on homepage: not used
+//show it-content on homepage
 const showSkillsProjects = () =>{
   const itContent = document.getElementById("it-content");
   // const menuSkill = document.getElementById("menuSkills");
@@ -64,3 +64,28 @@ $(window).scroll(function() {
     btn.style.visibility="hidden";
   }
 });
+
+
+/*
+const showHideMsgPopup = () =>{
+  const msgPopup = document.getElementById("msgPopup");
+  if (msgPopup.style.visibility === "visible"){
+    msgPopup.style.visibility = "hidden";
+  } else {
+    msgPopup.style.visibility = "visible";
+  }
+
+};
+*/
+
+
+const popup=(showhide)=> {
+    if(showhide === "show"){
+        document.getElementById('msgPopup').style.visibility="visible";
+    }
+
+    if(showhide === "hide"){
+        document.getElementById('msgPopup').style.visibility="hidden";
+    }
+
+};
