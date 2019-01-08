@@ -15,6 +15,55 @@ body
 }
 
 
+/****animation*********/
+
+.ani1, .ani2{
+    width: 0;
+    height: 0;
+    position: relative;
+    z-index: 9;
+    background-color: #c5c5c5;
+}
+
+.ani1{
+    -webkit-animation: animation1 1s 1; /* Safari 4.0 - 8.0 */
+    animation: animation1 1s 1;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.ani2{
+    -webkit-animation: animation2 1s 1; /* Safari 4.0 - 8.0 */
+    animation: animation2 1s 1;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+
+
+@keyframes animation1 {
+    from {right: 0; bottom: 0; width: 100vw; height: 50vh; }
+    to { right: 100vw; bottom: 100vh;   width: 0; height: 0;  }
+}
+
+@keyframes animation2 {
+    from {left: 0; top: 0; width: 100vw; height: 50vh;   }
+    to { left: 100vw; top: 100vh;  width: 0; height: 0;}
+}
+
+/****animation  end********/
+
+.wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-x: hidden;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .divnav{
     /*background-color: #575757;*/
     background-color: snow;
@@ -22,7 +71,6 @@ body
     position:fixed;
     top: 0;
     left: 0;
-    right: 0;
     float: left;
     min-width: fit-content;
     z-index: 99;
@@ -260,14 +308,18 @@ body
     list-style: none !important;
     max-width: 960px;
     margin: auto;
+    width: available;
+    overflow-x: hidden;
 
 }
 
 .projects ul li{
     color: #5c5c5c;
-    padding-bottom: 4%;
     height: auto;
     text-align: center;
+    overflow-x: auto;
+    overflow-wrap: break-word;
+    padding: 0 3px;
 
 }
 

@@ -12,10 +12,52 @@ body{
   background-attachment: fixed;
 }
 
+/****animation*********/
+.ani1, .ani2{
+    width: 0;
+    height: 0;
+    position: relative;
+    z-index: 9;
+    background-color: #a9a9a9;
+}
+
+.ani1{
+    -webkit-animation: animation1 1s 1; /* Safari 4.0 - 8.0 */
+    animation: animation1 1s 1;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+.ani2{
+    -webkit-animation: animation2 1s 1; /* Safari 4.0 - 8.0 */
+    animation: animation2 1s 1;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+
+
+@keyframes animation1 {
+    from {right: 0; bottom: 0; width: 100vw; height: 50vh; }
+    to { right: 100vw; bottom: 100vh;   width: 0; height: 0;  }
+}
+
+@keyframes animation2 {
+    from {left: 0; top: 0; width: 100vw; height: 50vh;   }
+    to { left: 100vw; top: 100vh;  width: 0; height: 0;}
+}
+
+/****animation  end********/
+
+
+
+
 .divnav{
     background-color: #575757;
     width: 100%;
     position:fixed;
+    top: 0;
+    left: 0;
     float: left;
     min-width: fit-content;
     z-index: 99;
@@ -66,7 +108,8 @@ body{
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    visibility: visible;
+    visibility: hidden;
+    z-index: 9;
 }
 
 .btn:hover {
@@ -83,6 +126,11 @@ body{
     /*flex-direction: row-reverse;*/
     margin: auto;
     padding: 60px 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow-y: visible;
 }
 
 .heading{

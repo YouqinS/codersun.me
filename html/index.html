@@ -37,7 +37,7 @@
   <div class="container-fluid">
 	  <div class="home-page" id="home">
 
-  		<div class="divnav" id="menu">
+		  <div class="divnav" id="menu">
 			<!--<ul class="nav nav-tabs">-->
 			<ul class="linav">
   				 <li> <a href="index.html"> Home </a> </li>
@@ -49,8 +49,7 @@
 
   		</div>
 
-
-	  <div class="info-content" id="">
+		  <div class="info-content" id="">
 
 			<div>
 				<img class="img-circle img-responsive" src="images/cv_image.jpg" alt="myimage">
@@ -75,25 +74,78 @@
 
 		   <div  class="socialmedia">
 				<ul>
-					<li><a href="https://github.com/YouqinS"> <i class="fa fa-github"></i></a>
+					<li><a href="https://github.com/YouqinS" target="_blank"> <i class="fa fa-github"></i></a>
 					</li>
 
-					<li> <a href="https://www.linkedin.com/in/youqin-sun-0a74122a/"> <i class="fa fa-linkedin"></i> </a>
+					<li> <a href="https://www.linkedin.com/in/youqin-sun-0a74122a/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
 					</li>
 
-					<li> <a href="https://www.youtube.com/channel/UC529eGr3gTJaoro8TE8Un0A?view_as=subscriber"> <i class="fa fa-youtube"></i> </a>
+					<li> <a href="https://www.youtube.com/channel/UC529eGr3gTJaoro8TE8Un0A?view_as=subscriber" target="_blank"> <i class="fa fa-youtube"></i> </a>
 					</li>
 
-					<li> <a href="https://www.facebook.com/vivian.sun.1466"> <i class="fa fa-facebook"></i> </a>
+					<li> <a href="https://www.facebook.com/vivian.sun.1466" target="_blank"> <i class="fa fa-facebook"></i> </a>
 					</li>
-
 				</ul>
-			</div><br><br>
+			</div>
 
-		  <span class="skills-nav"><a href="#skills"><i class="fa fa-arrow-down"></i>&nbsp More</a></span><br>
+			  <div class="send-msg" >
+				  <p class="msg-ask">Send me a message? &nbsp&nbsp</p>
+				  <button class="write-msg-icon" onclick="popup('show');"><i class="fa fa-arrow-right"></i>&nbsp&nbsp<i class="fa fa-pencil"></i></button>
+		  		</div>
 
-	  </div>
+			  <br><div class="more-down"><a href="#skills" ><i class="fa fa-arrow-down"></i>&nbsp More</a></div><br>
 
+
+		  </div>
+
+			  <div class="msg-popup" id="msgPopup">
+				  <form name="message" action="" method="post" id="msgForm">
+
+					  <div class="row">
+						  <a id="cancelmsg" href="javascript:;" onclick="popup('hide');"><i class="fa fa-times"></i></a>
+					  </div>
+					  <div class="row">
+						  <div class="col-25">
+							  <label>Name</label>
+						  </div>
+						  <div class="col-75">
+							  <input type = "text" name = "name" required placeholder="required" class="">
+						  </div>
+					  </div>
+
+					  <div class="row">
+						  <div class="col-25">
+							  <label>Email</label>
+						  </div>
+						  <div class="col-75">
+							  <input type = "email" name = "email" class="" required placeholder="required and must be valid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+						  </div>
+					  </div>
+
+					  <div class="row">
+						  <div class="col-25">
+							  <label>Phone</label>
+						  </div>
+						  <div class="col-75">
+							  <input type = "password" name = "password" required placeholder="required" class="">
+						  </div>
+					  </div>
+
+					  <div class="row">
+						  <div class="col-25">
+							  <label>Message</label>
+						  </div>
+						  <div class="col-75">
+							  <textarea class="required" required rows="" cols="" placeholder="required"> </textarea>
+						  </div>
+					  </div>
+
+					  <div class="row">
+						  <input type="submit" name="submit" value="Send">
+					  </div>
+
+				  </form><br>
+			  </div>
   	</div>
 
 	  <div class="it-content" id="it-content">
@@ -184,7 +236,7 @@
 
   </div>
 
-<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
   </body>
 
 </html>

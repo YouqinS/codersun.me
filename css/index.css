@@ -22,6 +22,7 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+
 .container-fluid{
     margin: auto;
     overflow: hidden;
@@ -86,6 +87,7 @@ body{
     margin-left: 0;
 }
 
+
 .linav li{
     list-style: none;
     margin-top: 5px;
@@ -97,14 +99,14 @@ body{
     display: block;
     padding: 10px;
     font-weight: bold;
-  color: white;
+  color: whitesmoke;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(98, 98, 98);
   text-align: center;
   border: 1px solid rgba(30, 30, 30, 0.99);
   border-radius: 40px;
-  transition: width 0.1s, height 0.1s, transform 0.1s;
+  transition: width 0.2s, height 0.2s, transform 0.3s;
 }
 
 
@@ -113,9 +115,9 @@ body{
     background-color: #dad9d8;
     color: #070707;
     text-decoration: none;
-    /*width: 110%;*/
-    height: 110%;
-    transform: translate(2px, 1px);
+    width: 110%;
+    /*height: 110%;*/
+    transform: translate(5px, 1px);
 
    /* transform: rotate(360deg);*/
 }
@@ -269,16 +271,6 @@ h2{
 
 
  /*message form*/
-.msgdiv{
-    /*width: 50vw;*/
-    /*height: 50vh;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*top: 50%;*/
-    /*transform: translate(-50%,-50%);*/
-}
 
 .send-msg{
     text-align: center;
