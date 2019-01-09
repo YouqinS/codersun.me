@@ -131,6 +131,7 @@ body{
     left: 50%;
     transform: translate(-50%, 0);
     overflow-y: visible;
+    overflow-x: auto;
 }
 
 .heading{
@@ -298,12 +299,16 @@ body{
     color: #5a5a5a;
     font-size: 1.2em;
     flex-wrap: wrap;
+    padding: 3px;
+    overflow-x: auto;
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 .projects ul li{
     list-style: none;
     padding: 3px;
-    overflow: revert;
+    overflow-x: auto;
     overflow-wrap: break-word;
 }
 
@@ -325,6 +330,9 @@ body{
     color: #5b5ed2;
     font-size: medium;
     font-weight: lighter;
+    padding: 3px;
+    overflow-x: auto;
+    overflow-wrap: break-word;
 }
 
 .projects ul li a:hover{
@@ -357,6 +365,7 @@ body{
         display: flex;
         flex-direction: column;
         padding-top: 55px;
+        width: 100%;
     }
 
     .heading{
