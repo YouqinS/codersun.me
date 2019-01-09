@@ -36,7 +36,8 @@
 .skill{
     width: 130px;
     min-width: max-content;
-    background-color: #1e6cb6;
+    /*background-color: #1e6cb6;*/
+    background-color: lightseagreen;
     height: 35px;
     padding-top: 5px;
     text-align: center;
@@ -48,7 +49,9 @@
 }
 
 .progress-bar{
-    background-color: #2789e8;
+    background-color: #27d3ca;
+    color: #373737;
+    font-weight: bold;
     height: 35px;
     padding: 5px;
     text-align: right;

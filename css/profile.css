@@ -173,6 +173,7 @@ body{
     margin: 0 auto;
     /*border: solid 1px #d3d3d3;*/
     background-color: #f4ece2;
+    padding: 0 5px;
 }
 
 
@@ -277,8 +278,9 @@ body{
 
 .maincontent{
     flex: 65%;
-    margin: 10px auto;
     padding: 15px;
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.6);
 }
 
 .maincontent h2{
@@ -327,7 +329,7 @@ body{
 
 .projects ul li a{
     font-style: italic;
-    color: #5b5ed2;
+    color: #176ec2;
     font-size: medium;
     font-weight: lighter;
     padding: 3px;
@@ -336,12 +338,14 @@ body{
 }
 
 .projects ul li a:hover{
-    background-color:lightgray;
+    background-color: #555555;
     padding: 5px;
+    color: whitesmoke;
 }
 
 .projects ul li a:visited{
     /*color: grey;*/
+    color: sandybrown;
 }
 
 
